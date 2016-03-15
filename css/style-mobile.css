@@ -4,10 +4,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.box.alt.container{padding:0;background:none;}
+
+
 /********SUB PAGINAS *******************/
 
 .submenu p{width: 100%;}
-
 
 /* Basic */
 
@@ -30,7 +32,7 @@
 
 /* Feature */
 
-	.feature {background: white;display: inline-block;height: auto;width: 100%;}
+	.feature {background: white;display: inline-block;height: auto;width: 100%;padding:1em 0;margin:0;box-shadow:none;}
 
 		.feature:last-child {margin-bottom: 0;}
 
@@ -41,13 +43,15 @@
 	#header {
 		background-image: url("images/top-1280.svg"),  url("../images/header.png");
 		background-size: 1280px 184px,						cover;
-		padding: 1em 0 5em 0;
+		padding: 5em 0 5em 0;
 	}
-
+#header .logo{top:0;left:0;}
 		#header:before {height: calc(100% - 20px);}
-		#header .logo {font-size: 1.5em; }
+		#header .logo {font-size: 1.5em;width:100%; }
 		#header h1 {font-size: 1.25em;}
 		#header p {	font-size: 1em;}
+#header .logo span{width:15rem;margin-top:0.5em;}		
+.deporte{padding: 1em 0 5em 0;}
 
 /* Footer */
 
@@ -62,9 +66,10 @@
 #footer .sport, #footer .club{float:left;}
 #footer .logo{position:absolute;top:0.5em;right:1em;width:5em;text-align:right;}
 		#footer:before {height: calc(184px + 2em);}
-
 		#footer form {padding-bottom: 0;}
 
 /* Main */
-
 	#main {padding: 2em 0 2em 0;}
+	
+/**/	
+.feature h2 span{  font-size: 300%;padding: 1em;display: inline-block;}

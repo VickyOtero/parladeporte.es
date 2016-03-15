@@ -8,50 +8,25 @@
 */
 
 /*VICKY*/
-.box.alt.container{display:block;width:90%;margin:1em auto;}
+.box.alt.container{display:block;width: 100%;margin:1em auto;text-align: center;background-color:#5b5b5b;padding: 3em 0;}
 .fixed{position: fixed;z-index: 9;width: 100%;text-align: right;}
-.fixed a{padding: 1em;background: rgba(123,204,51,0.5);color: white;}
-
+.fixed a{padding: 0.5em;background: rgba(255,255,255,0.5);}
+.fixed a:before{content: '\25B2';color: #222;font-size: 200%;}
 #anclaJuntas{display: block;margin-bottom: 4em;}
 span.next{width: 80%;display: block;position: relative;margin: auto;}
 span.next img{width: 100%;}
 #header + h4 span{font-size:140%;}
 #header + h4 + h2 span{font-size:180%;color:#B65140;}
 /**********SUBPAGINAS********/
-h2.subtitle{
-color: #659cdf;
-display: block;
-position: relative;
-margin-bottom: 2em;
-}
-.submenu{
-	width: 80%;
-	max-width:80em;
-	min-width: 15em;
-	display: block;
-	margin: auto;
-	overflow: hidden;
-}
-
-.submenu p{
-	display: inline-block;
-	width: 50%;
-	max-width: 40em;
-	min-width: 15em;
-	float: left;
-	position: relative;
-	padding: 0 2em;
-}
+h2.subtitle{color: #659cdf;display: block;position: relative;margin-bottom: 2em;}
+.submenu{width: 80%;max-width:80em;min-width: 15em;display: block;margin: auto;overflow: hidden;}
+.submenu p{display: inline-block;width: 50%;max-width: 40em;min-width: 15em;float: left;position: relative;padding: 0 2em;}
 /**********FIN*****************/
-
 
 header.submenu p{top:0;text-align: left;}
 /****** BASIC ********/
-
 	html, body {height: 100%;}
-
 	body {background: white;}
-
 		body.is-loading * {
 			-moz-transition: none !important;
 			-webkit-transition: none !important;
@@ -88,12 +63,7 @@ header.submenu p{top:0;text-align: left;}
 
 	h1, h2, h3, h4, h5, h6 {color: #5b5b5b;font-weight: 700;line-height: 1.75em;text-align: center;}
 	h1, h3, h4, h5, h6 {text-transform: uppercase;}
-
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
-			text-decoration: none;
-		}
-
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: inherit;text-decoration: none;}
 	h2 {font-size: 1.75em;}
 	h3 {font-size: 1.5em;}
 
@@ -107,10 +77,9 @@ header.submenu p{top:0;text-align: left;}
 
 
 /*************** HEADER **********/
-
-	#header {
+#header {
 		background-attachment: scroll,							scroll,					fixed;
-		background-image: url("images/top-3200.svg"), url("../images/header.jpg");
+		
 		background-position: bottom center, center center;
 		background-repeat: repeat-x, no-repeat;
 		background-size: 3200px 460px, cover;
@@ -118,17 +87,20 @@ header.submenu p{top:0;text-align: left;}
 		position: relative;
 		text-align: center;
 	}
-	
-		#header:before {	height: calc(100% - 50px);opacity: 0.15;top: 0;}
-		#header:after {bottom: 0;height: 50px;}
-		#header a {	color: rgba(255, 255, 255, 0.8);}
-	#header a:hover {border-bottom-color: transparent;color: #4eb980;}
+#header:before {	height: calc(100% - 50px);opacity: 0.15;top: 0;}
+#header:after {bottom: 0;height: 50px;}
+#header a{color: rgba(255, 255, 255, 0.8);}
+#header a:hover {border-bottom-color: transparent;color: #4eb980;}
+#header .logo{position:absolute; top: 1em;left: 39%;}
+#header .logo span{background:url('../images/Parladep_blanco.png') no-repeat;background-size:100%;display:inline-block;width: 25rem;height: 8rem;}
 
-#header .logo span{color:#fff;background:rgba(0, 0, 0, 0.3);box-shadow:-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);
+/*#header .logo span{color:#fff;background:rgba(0, 0, 0, 0.3);box-shadow:-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);}
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);}*/
+/*LOGO*/
 
-		
+
+
 
 /*COMUN DEPORTE*/
 		
@@ -151,27 +123,15 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);}
 .deporte strong, #orgPublicos b {color: white;}
 /*imagenes cabeceras*/
 #header{background-image: url("images/top-3200.svg"),  url("../images/header.png");background-size:100%;padding-top:9em;}
-#tenismesa {	background-image: url("images/top-3200.svg"),url("../images/tenis-mesa-parla.jpg");}
-#tenis {background-image: url("images/top-3200.svg"),  url("../images/tenis-parla.jpg");}
-#futbolsala {background-image: url("images/top-3200.svg"),  url("../images/futbol-sala-parla.jpg");}
-#futbol11 {background-image: url("images/top-3200.svg"),  url("../images/futbol-11-parla.jpg");}
-#baloncesto {background-image: url("images/top-3200.svg"),  url("../images/baloncesto-parla.jpg");}
-#balonmano {background-image: url("images/top-3200.svg"),  url("../images/balonmano-parla.jpg");}
+#tenismesa {	background-image: url("images/top-3200.svg"),url("../images/cabecera_400_tenis_M.png");}
+#tenis {background-image: url("images/top-3200.svg"),  url("../images/cabecera_400_tenis.png");}
+#futbolsala {background-image: url("images/top-3200.svg"),  url("../images/cabecera_400_futbol_sala.png");}
+#futbol11 {background-image: url("images/top-3200.svg"),  url("../images/cabecera_400_futbol.png");}
+#baloncesto {background-image: url("images/top-3200.svg"),  url("../images/cabecera_baloncesto-parla.png");}
+#balonmano {background-image: url("images/top-3200.svg"),  url("../images/cabecera_400_balonmano.png");}
 
 
 
-/*LOGO*/
-		#header .logo {
-			display: inline-block;
-			font-size: 2.25em;
-			/* height: 2.25em; */
-			line-height: 2.35em;
-			margin: 0 0 1em 0;
-			text-align: center;
-			/* width: 25%; */
-
-		}
-		#header .logo img{width: 100%;display: block;}
 
 
 /************MAIN*******************/
@@ -236,14 +196,10 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);}
 
 /* FEATURE  cajas fotos*/
 
-	.feature {
-		position: relative;
-		height: 10em;
-		width: 15.66%;
-		display: inline-block;
-		min-height:12em;
-		box-sizing: border-box;
-}
+.feature {position:relative;height:15rem;width:15rem;display:inline-block;margin:1em;box-sizing: border-box;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);}
 		.feature h3, .feature h4, .feature h5, .feature h6 {text-align: inherit;}
 
 		.feature .image {
@@ -276,14 +232,11 @@ box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.53);}
 .image:before, .image:after{content: '';display: block;height: 100%;width: 100%;position: absolute;left: 0;top: 0;}
 .image:before{/* opacity:0.5; *//* background:rgba(0, 0, 0, 0.5); */}
 #ancla + .box .feature a:hover .image.icon:before{opacity:0;}
-.image:after {opacity:0;
-			background-size:100%;
-			background-repeat:no-repeat;
+.image:after {opacity:0;	background-size:100%;background-repeat:no-repeat;
 			-moz-transition: opacity 0.25s ease-in-out;
 			-webkit-transition: opacity 0.25s ease-in-out;
 			-o-transition: opacity 0.25s ease-in-out;
-			-ms-transition: opacity 0.25s ease-in-out;
-			border-bottom:0.2em solid #9E4438;}
+			-ms-transition: opacity 0.25s ease-in-out;}
 		
 .basket .image:after{background-image:url("images/cd-la-paz.jpg")}
 .tenism .image:after{background-image:url("images/tenis-mesa-parla.jpg")}
@@ -439,14 +392,15 @@ span.image.icon {cursor: default;
 
 /***SPAN.TITLE*****/
 
+
 .feature h2{position: absolute;display: block;z-index:1;width:100%;height:100%;text-align:center;bottom:0;color:white;font-family: arial;padding: 0 0.5em;
-background: rgba(158,68,56,1);
-background: -moz-linear-gradient(top, rgba(158,68,56,1) 0%, rgba(158,68,56,0) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(158,68,56,1)), color-stop(100%, rgba(158,68,56,0)));
-background: -webkit-linear-gradient(top, rgba(158,68,56,1) 0%, rgba(158,68,56,0) 100%);
-background: -o-linear-gradient(top, rgba(158,68,56,1) 0%, rgba(158,68,56,0) 100%);
-background: -ms-linear-gradient(top, rgba(158,68,56,1) 0%, rgba(158,68,56,0) 100%);
-background: linear-gradient(to bottom, rgba(158,68,56,1) 0%, rgba(158,68,56,0) 100%);
+background: rgba(0,0,0,1);
+background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.5)), color-stop(100%, rgba(0,0,0,0)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e4438', endColorstr='#9e4438', GradientType=0 );}
 
 
@@ -625,12 +579,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e4438', end
 
 
 /* Footer */
+
+
+/*mailto end*/
 /*patrocinadores*/
 #footer .container.small *{box-sizing:border-box;}
-#footer .container.small{width:100%;display:block; overflow:hidden; background:#E2D8BF;}
-#footer .container.small header{-webkit-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.41);
-  -moz-box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.41);
-  box-shadow: 10px 10px 5px -3px rgba(0,0,0,0.41);}
+#footer .container.small{width:100%;display:block; overflow:hidden; background:#5b5b5b;}
 #footer .container.small .logo{width:50%; margin:0 auto;}
 /**/
 #footer .container.small + div{overflow:hidden;border-top:0.1em solid #fff;border-bottom:0.1em solid #fff;}
@@ -643,26 +597,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e4438', end
 #footer ul:hover{background:rgba(0, 0, 0, 0.5);}
 #footer ul:hover span{color:#fff;}
  #footer ul:hover .sport{font-weight:normal;color:gray;}
+#footer img{width:80%;}
 #footer ul:hover img{opacity:1;}
 #footer .copyright{width:100%;}
-#footer img{width:100%;}
+
 ul.icons li a:hover, ul.icons li span:hover {background: rgba(224, 224, 224, 0.15);}
 	#footer {
 		background-attachment: scroll;
-		background-color:#00997C;
+		background-color:#222;
 		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
 		background-size: 3200px 460px;
 		color: rgba(255, 255, 255, 0.8);
-		/*
-		Since the SVG background occupies a lot of vertical space, we'll
-		add additional top padding (to move our content out of its way)
-		and a negative margin (to move everything up a bit).
-		*/
-		margin-top: -160px;
-		padding: calc(460px + 6em) 0 5em 0;
-		/*position: relative;*/
+		/*margin-top: -160px;padding: calc(460px + 6em) 0 5em 0;*/
+		padding:23em 8em 5em 8em;
 		text-align: center;
 	}
 

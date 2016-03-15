@@ -6,17 +6,9 @@
 
 /* Basic */
 
-	body, input, select, textarea {
-		font-size: 13pt;
-	}
-
-	h2 {
-		font-size: 1.35em;
-	}
-
-	h3 {
-		font-size: 1.15em;
-	}
+	body, input, select, textarea {font-size: 13pt;}
+	h2 {font-size: 1.35em;}
+	h3 {font-size: 1.15em;}
 
 /* Section/Article */
 	header.major {margin-bottom: 4em;padding: 1em 0;}
@@ -27,7 +19,7 @@
 	.box {padding: 2.5em;margin-bottom: 4em;}
 
 /* Feature */
-	.feature {height:20em;width:32.33%;}
+	/*.feature {height:20em;width:32.33%;}*/
 	.feature .content {padding: 2.5em;}
 
 /* Header */
@@ -36,13 +28,14 @@
 		background-attachment: scroll,scroll;
 		background-image: url("images/top-1600.svg"), url("../images/header.png");
 		background-size: 1600px 230px,						cover;
-		padding: 1em 0 5em 0;
+		padding: 10em 0 5em 0;
 	}
 	#header:before {	height: calc(100% - 25px);}
 	#header:after {height: 25px;}
 	#header h1 {font-size: 2em;}
 	#header p {font-size: 1.15em;}
 
+	#header .logo{left:30%;}
 /* Footer */
 
 	#footer {
